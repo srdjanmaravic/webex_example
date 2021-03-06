@@ -181,3 +181,60 @@ header p {
     padding:30px 0;
 }
 /* Blog */
+.blog {
+    padding: var(--padding);
+    text-align: center;
+}
+.blog img {
+    width: 100%;
+}
+.blog .row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.blog article {
+    flex: 0 0 31%;
+}
+.blog .headings::after {
+    margin: 10px auto 30px auto;
+    background:var(--orange);
+}
+.blog button {
+  
+    background:var(--tamnoPlava);
+   
+}
+.blog button:hover {
+    
+    background: var(--orange);
+    
+}
+.blog p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.blog h3 {
+    font-size: 1.7rem;
+     padding: 20px 0;
+}
+/* footer */
+footer {
+    background-image: linear-gradient(to left,rgba(29,82,124,.8),rgba(253,127,69,.8)), url(img/baloon.jpg);
+    color: var(--bela);
+   text-align: center;
+    padding: var(--padding);
+}
+footer a {
+    color: var(--tamnoPlava);
+    font-size: 2rem;
+    margin: 10px;
+}
+footer a:hover {
+    color: var(--svetloPlava);
+    
+}
+footer p {
+    padding-top: 30px;
+}
+/* Responsive */
