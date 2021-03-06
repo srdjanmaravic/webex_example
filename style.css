@@ -73,8 +73,8 @@ button:hover {
 nav {
     background: linear-gradient(to right, var(--orange),var(--tamnoPlava));
     
-    position: fixed;
-    width: 100%;
+    /* position: fixed;
+    width: 100%; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -102,6 +102,7 @@ header {
     align-items: center;
     justify-content: center;
     color: var(--bela);
+    text-align: center;
 }
 header h1 {
     font-size: 3rem;
@@ -120,7 +121,7 @@ header p {
 .about {
     padding: var(--padding);
     display: flex;
-    
+    flex-wrap: wrap;
 
 }
 .about img {
@@ -160,7 +161,7 @@ header p {
 }
 .services .container {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 .services .container article {
@@ -191,7 +192,7 @@ header p {
 .blog .row {
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 .blog article {
     flex: 0 0 31%;
@@ -238,3 +239,37 @@ footer p {
     padding-top: 30px;
 }
 /* Responsive */
+@media(max-width:768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        padding: 0 10px;
+        letter-spacing: 0;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    .about article {
+        flex: 0 0 100% ;
+        margin: 25px;
+    }
+    .about p {
+        padding-right: 0px;
+    }
+    .services article {
+        flex: 0 0 100%;
+    }
+    .services article:first-child {
+        order: 1;
+    }
+    .services {
+        height: 175vh; 
+    }
+    
+    .blog article {
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    
+}
